@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 #define delimiter "\n---------------------------------------------------------\n"
 using std::cin;
@@ -39,11 +39,11 @@ public:
 
 	double distance(Point other)
 	{
-		//this - òî÷êà, äëÿ êîòîðîé âûçâàëñÿ ìåòîä 
-		//		 (îò êîòîðîé íóæíî íàéòè ðàññòîÿíèå)
-		//other - òî÷êà, äî êîòîðîé íóæíî íàéòè ðàññòîÿíèå.
-		//this - ýòà òî÷êà
-		//other - äðóãàÿ òî÷êà
+		//this - Ñ‚Ð¾Ñ‡ÐºÐ°, Ð´Ð»Ñ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð²Ñ‹Ð·Ð²Ð°Ð»ÑÑ Ð¼ÐµÑ‚Ð¾Ð´ 
+		//		 (Ð¾Ñ‚ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð½ÑƒÐ¶Ð½Ð¾ Ð½Ð°Ð¹Ñ‚Ð¸ Ñ€Ð°ÑÑÑ‚Ð¾ÑÐ½Ð¸Ðµ)
+		//other - Ñ‚Ð¾Ñ‡ÐºÐ°, Ð´Ð¾ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð½ÑƒÐ¶Ð½Ð¾ Ð½Ð°Ð¹Ñ‚Ð¸ Ñ€Ð°ÑÑÑ‚Ð¾ÑÐ½Ð¸Ðµ.
+		//this - ÑÑ‚Ð° Ñ‚Ð¾Ñ‡ÐºÐ°
+		//other - Ð´Ñ€ÑƒÐ³Ð°Ñ Ñ‚Ð¾Ñ‡ÐºÐ°
 		double x_distance = this->x - other.x;
 		double y_distance = this->y - other.y;
 		double distance = sqrt(x_distance * x_distance + y_distance * y_distance);
@@ -104,15 +104,15 @@ void main()
 	B.set_x(7);
 	B.set_y(8);
 	cout << B.get_x() << "\t" << B.get_y() << endl;
-	cout << "Ðàçìåð îáúåêòà: " << sizeof(B) << endl;
+	cout << "Ð Ð°Ð·Ð¼ÐµÑ€ Ð¾Ð±ÑŠÐµÐºÑ‚Ð°: " << sizeof(B) << endl;
 	cout << delimiter << endl;
-	cout << "Ðàññòîÿíèå îò òî÷êè A äî òî÷êè B: " << A.distance(B) << endl;
+	cout << "Ð Ð°ÑÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð¾Ñ‚ Ñ‚Ð¾Ñ‡ÐºÐ¸ A Ð´Ð¾ Ñ‚Ð¾Ñ‡ÐºÐ¸ B: " << A.distance(B) << endl;
 	cout << delimiter << endl;
-	cout << "Ðàññòîÿíèå îò òî÷êè B äî òî÷êè A: " << B.distance(A) << endl;
+	cout << "Ð Ð°ÑÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð¾Ñ‚ Ñ‚Ð¾Ñ‡ÐºÐ¸ B Ð´Ð¾ Ñ‚Ð¾Ñ‡ÐºÐ¸ A: " << B.distance(A) << endl;
 	cout << delimiter << endl;
-	cout << "Ðàññòîÿíèå ìåæäó òî÷êàìè A è B:   " << distance(A, B) << endl;
+	cout << "Ð Ð°ÑÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð¼ÐµÐ¶Ð´Ñƒ Ñ‚Ð¾Ñ‡ÐºÐ°Ð¼Ð¸ A Ð¸ B:   " << distance(A, B) << endl;
 	cout << delimiter << endl;
-	cout << "Ðàññòîÿíèå ìåæäó òî÷êàìè B è A:   " << distance(B, A) << endl;
+	cout << "Ð Ð°ÑÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð¼ÐµÐ¶Ð´Ñƒ Ñ‚Ð¾Ñ‡ÐºÐ°Ð¼Ð¸ B Ð¸ A:   " << distance(B, A) << endl;
 	cout << delimiter << endl;
 #endif
 
